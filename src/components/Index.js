@@ -21,13 +21,13 @@ const Index = ({ userName }) => {
 
     return (
         <>
-            (<div className={CSS.container}>
+            <div className={CSS.container}>
                 <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
                     <Screen {...props} />
                     <hr />
                 </div>
                 <Footer {...props} />
-            </div>)
+            </div>
 
         </>
     )

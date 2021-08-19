@@ -1,9 +1,21 @@
 .container2 {
-    padding-top: 30px;
+    padding-top: 3rem;
     margin: auto;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.mid_container {
+    display: flex;
+    align-items: center;
+    margin-top: 6rem;
+    width: 100%;
+}
+
+.home_img {
+    width: 50rem;
+    margin-right: 5rem;
 }
 
 .first_head {
@@ -11,7 +23,6 @@
 }
 
 .desc {
-
     margin: 0;
     font-weight: bold;
     padding-right: 5rem;

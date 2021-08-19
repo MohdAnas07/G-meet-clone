@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
 
-  const [userName, setUserName] = useState('')
+  const [userName, setUserName] = useState('LazyPanda')
   const user = { userName, setUserName }
 
   return (
