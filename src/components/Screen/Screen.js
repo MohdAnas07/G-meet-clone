@@ -4,7 +4,6 @@ import Video from '../video/Video'
 
 const Screen = ({ micOn, camOn, shareOn, userName }) => {
 
-
     return (
         <>
             {

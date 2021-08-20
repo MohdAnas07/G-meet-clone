@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
 
-  const [userName, setUserName] = useState('LazyPanda')
+  const [userName, setUserName] = useState('')
   const user = { userName, setUserName }
 
   return (
@@ -23,6 +23,8 @@ function App() {
           <Route path="/video" >
             <Index {...user} />
           </Route>
+
+
         </Switch>
       </Router>
     </div >

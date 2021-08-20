@@ -4,7 +4,7 @@ import Footer from './Footer/Footer'
 import CSS from './index.module.css'
 // import Video from './video/Video'
 
-const Index = ({ userName }) => {
+const Index = ({ userName, setUserName }) => {
     const [micOn, setMicOn] = useState(false);
     const [camOn, setCamOn] = useState(true);
     const [shareOn, setShareOn] = useState(false);
@@ -15,7 +15,7 @@ const Index = ({ userName }) => {
         camOn, setCamOn,
         shareOn,
         setShareOn,
-        userName
+        userName, setUserName
     }
     console.log(userName);
 

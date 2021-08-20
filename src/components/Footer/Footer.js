@@ -14,7 +14,7 @@ const Footer = ({ micOn,
     setMicOn,
     camOn, setCamOn,
     shareOn,
-    setShareOn }) => {
+    setShareOn, userName, setUserName }) => {
 
 
 
@@ -30,6 +30,9 @@ const Footer = ({ micOn,
     const off = {
         'background-color': '#fff',
         color: '#000'
+    }
+    const handleEndCall = () => {
+        setUserName(null)
     }
 
     return (
@@ -55,8 +58,11 @@ const Footer = ({ micOn,
                 </div>
 
                 <Link exact to='/'>
-                    <div title='leave meet' style={{ 'background-color': '#fff', color: 'red' }} className={CSS.icon}>
-                        {shareOn ? <CallEndIcon style={styled} /> : <CallEndIcon style={styled} />}
+                    <div onClick={handleEndCall} title='leave meet' style={{ 'background-color': '#fff', color: 'red' }} className={CSS.icon}>
+
+                        {shareOn ?
+                            <CallEndIcon style={styled} /> :
+                            <CallEndIcon style={styled} />}
                     </div>
                 </Link>
 
